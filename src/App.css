@@ -32,6 +32,12 @@
     display: grid;
     place-items: center;
   }
+
+  @media (max-width: 468px) {
+    .createPostPage {
+      width: 100%;
+    }
+  }
   
   .cpContainer {
     width: 500px;
