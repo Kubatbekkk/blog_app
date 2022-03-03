@@ -3,7 +3,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
 
-function CreatePost({ isAuth }) {
+const CreatePost=({ isAuth })=> {
   const [title, setTitle] = useState("");
   const [postText, setPostText] = useState("");
 
@@ -23,12 +23,12 @@ function CreatePost({ isAuth }) {
     if (!isAuth) {
       navigate("/login");
     }
-  }, []);
+  }, [isAuth, navigate]);
 
   return (
     <div className="createPostPage">
       <div className="cpContainer">
-        <h1>Create A Post</h1>
+        <h1>Create a Post</h1>
         <div className="inputGp">
           <label> Title:</label>
           <input

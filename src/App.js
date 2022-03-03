@@ -6,7 +6,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
-function App() {
+
+const App = () => {
 
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"))
   const signUserOut = () => {
