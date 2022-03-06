@@ -270,6 +270,7 @@ and (max-device-width : 480px) {
   justify-content: center;
 }
 
+
 .paginationBttns a {
   padding: 10px;
   margin: 8px;
@@ -287,4 +288,26 @@ and (max-device-width : 480px) {
   color: white;
   background-color: #488FB1;  
 }
+
+.search__form {
+  padding-left: 10px;
+}
    
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .search__form {
+    visibility: hidden;
+  }
+}
+
+.postAuthor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postAuthor h6 {
+  padding-top: 10px;
+  color: #533E85;
+  opacity: 0.8;
+}
