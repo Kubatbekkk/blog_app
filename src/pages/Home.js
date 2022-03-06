@@ -27,6 +27,8 @@ function Home({ isAuth }) {
     return post.title.toLowerCase().includes(value.toLowerCase())
   })
 
+
+  
   // const deletePost = async 
   async function deletePost(id) {
     const postDoc = doc(db, "posts", id);
