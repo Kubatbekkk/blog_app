@@ -70,7 +70,7 @@ function Home({ isAuth }) {
       <form className="search__form">
         <input 
           type="text"
-          placeholder="Search..."
+          placeholder="Search by Title..."
           className="search__input"
           onChange={(e) => setValue(e.target.value)}
         />
@@ -79,7 +79,7 @@ function Home({ isAuth }) {
     <div className="homePage"> 
       {displayPosts}
       <ReactPaginate 
-        previousLabel={"Previous"}
+        previousLabel={"Prev"}
         nextLabel={"Next"}
         pageCount={pageCount}
         onPageChange={changePage}

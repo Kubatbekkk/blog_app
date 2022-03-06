@@ -289,9 +289,22 @@ and (max-device-width : 480px) {
   background-color: #488FB1;  
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .paginationBttns {
+    width: 70%;
+    height: 20px;
+  }
+}
+
 .search__form {
   padding-left: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }
+
    
 @media only screen 
 and (min-device-width : 320px) 
